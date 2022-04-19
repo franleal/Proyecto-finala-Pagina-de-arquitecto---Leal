@@ -4,30 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sergio Leal Arquitecto</title>
-        <link rel="stylesheet" href="estilos.css">
-        
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        
+
+        <link rel="stylesheet" href="estilos.css">
+        <title>Sergio Leal Arquitecto</title>
     </head>
 <body>
     <header class="H">
-        <div class="inicioTitulo">
+        <section class="inicioTitulo">
                 Sergio Leal 
                 Arquitecto
-        </div>
-        
-        <div class="titulo2">
+        </section>
+
+        <div class="titulo2 animate__animated animate__fadeInUp">
             PROYECTOS
-        </div> 
+        </div>  
 
         <nav>
-            <ul class="menu">
+            <ul class="menu animate__animated animate__fadeInRight">
                 <li class="menu__li"><a href="index.html" >Home</a></li>
                 <li class="menu__li"><a href="sobre mi.html" >Sobre mi</a></li>
                 <li class="menu__li"><a href="galeria.html" >Galeria</a></li>
@@ -41,17 +45,17 @@
     <!---------------PROYECTOS----------------->
     
     <section class="proyectos">
-        <div class="proyectos__texto"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
-        <img src="./imagenes/proyectos/3.jpg" alt="proyectos" class="proyectos__img">
+        <div class="proyectos__texto wow animate__animated animate__slideInLeft"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
+        <img src="./imagenes/proyectos/3.jpg" alt="proyectos" class="proyectos__img wow animate__animated  ">
         
-        <div class="proyectos__texto"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
-        <img src="./imagenes/proyectos/ArcillaBarro-2.jpg"alt="proyectos" class="proyectos__img">
+        <div class="proyectos__texto wow animate__animated animate__slideInRight"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
+        <img src="./imagenes/proyectos/ArcillaBarro-2.jpg"alt="proyectos" class="proyectos__img wow animate__animated  ">
         
-        <div class="proyectos__texto"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
-        <img src="./imagenes/proyectos/casa 1.jpg" alt="proyectos" class="proyectos__img"> 
+        <div class="proyectos__texto wow animate__animated animate__slideInLeft"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
+        <img src="./imagenes/proyectos/casa 1.jpg" alt="proyectos" class="proyectos__img wow animate__animated  "> 
         
-        <div class="proyectos__texto"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
-        <img src="./imagenes/proyectos/garabato.jpg" alt="proyectos" class="proyectos__img">
+        <div class="proyectos__texto wow animate__animated animate__slideInRight"> ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi eos, et dolor deleniti eaque aut quaerat esse laudantium unde dignissimos quae voluptatibus! Laborum dolores libero cumque porro error quod.</div>
+        <img src="./imagenes/proyectos/garabato.jpg" alt="proyectos" class="proyectos__img wow animate__animated ">
         
 
 
@@ -80,14 +84,19 @@
         </section>  
         
         <section class="redes">
-            <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="redes__a"></a>
+            <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="ig"></a>
             
-            <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="redes__a"></a>
+            <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="tw"></a>
 
-            <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="redes__a"></a>
+            <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="fb"></a>
         </section>
 
     </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>   
 </body>
 
 </html>

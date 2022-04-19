@@ -11,23 +11,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        
 
         <link rel="stylesheet" href="estilos.css">
         <title>Sergio Leal Arquitecto</title>
     </head>
+
     <body>
-        
-        <!----------------------------Inicio de pag------------------------>
         <div class="grid-main">
             
             <header class="H">
-                <div class="inicioTitulo">
+                <section class="inicioTitulo">
                         Sergio Leal 
                         Arquitecto
-                </div>
-
+                </section>
+                
                 <nav>
-                    <ul class="menu">
+                    <ul class="menu animate__animated animate__fadeInRight">
                         <li class="menu__li"><a href="index.html" >Home</a></li>
                         <li class="menu__li"><a href="sobre mi.html" >Sobre mi</a></li>
                         <li class="menu__li"><a href="galeria.html" >Galeria</a></li>
@@ -39,26 +42,27 @@
 
             </header>
 
-            <div class="subtitulo">
+
+            <div class="subtitulo wow animate__animated animate__fadeInLeft">
                 <div class="subtitulo__texto">
                     <em>Arquitecto <br> Desarrollista <br> Director  técnico <br> Gerenciador de  proyectos</em>
                 </div>
             </div>
 
             <div class="img2">
-                <img src="./imagenes/HOME/1.jpg" alt="casa" class="imagenes__img">
+                <img src="./imagenes/HOME/1.jpg" alt="casa" class="imagenes__img animate__animated animate__fadeIn">
             </div>
 
             <div class="img3">
-                <img src="./imagenes/HOME/2.jpg" alt="casa2" class="imagenes__img">
+                <img src="./imagenes/HOME/2.jpg" alt="casa2" class="imagenes__img wow animate__animated animate__fadeIn">
             </div>
 
             <div class="caja img4">
-                <img src="./imagenes/HOME/3.jpg" alt="casa3" class="imagenes__img">
+                <img src="./imagenes/HOME/3.jpg" alt="casa3" class="imagenes__img wow animate__animated animate__fadeIn">
             </div>
 
             <footer class="F">
-                
+                <hr>
                 <ul class="listaFooter">
                     <li class="listaFooter__li"><a href="index.html" >Home</a></li> 
 
@@ -79,19 +83,20 @@
                 </section>  
                 
                 <section class="redes">
-                    <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="redes__a"></a>
+                    <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="ig"></a>
                     
-                    <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="redes__a"></a>
+                    <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="tw"></a>
 
-                    <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="redes__a"></a>
+                    <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="fb"></a>
                 </section>
 
             </footer>
 
+            <script src="js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>    
         </div>
 
-          
-
     </body>
-
 </html>
