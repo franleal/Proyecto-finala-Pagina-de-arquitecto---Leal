@@ -1,0 +1,643 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*---------------------------------------INDEX-----------------------------*/
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: #242020;
+    color: #f0e0cb;
+}
+.grid-main{
+    
+     
+     display: grid;
+     grid-template-areas: 
+           "H H"
+           "c1 img2"
+           "c1 img2"
+           "img3 img4"
+           "F F";
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 900px 650px 650px 800px 500px;
+}
+
+ 
+/*---------------------------------------INICIO----------------------------*/
+.inicioTitulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;  
+    color: #f0e0cb;;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    position: absolute;
+    top:20px;
+    right: 30px;
+}
+
+.menu__li{
+    list-style: none;
+    padding: 20px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:#faefe0 ;  
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.H{
+    background-image: url(/imagenes/HOME/fondo.jpg);
+    grid-area: H;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+/*---------------------------------------CONTENIDO----------------------------*/
+.subtitulo{
+    grid-area: c1;
+    width: 100%;
+    height: 100%;
+}
+
+.subtitulo__texto{
+    color: #f0e0cb;
+    font-size: 90px;
+    text-align: start;
+    width: 700px;
+    height: 100%;
+}
+
+
+.imagenes__img{
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img2{
+    grid-area: img2;
+    
+}
+
+
+.img3{
+    grid-area: img3;
+}
+
+
+.img4{
+    grid-area: img4;
+}
+
+/*---------------------------------------FOOTER----------------------------*/
+.F{
+    grid-area: F;
+    width: 100%;
+    height: 100%;
+}
+
+.listaFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.listaFooter__li{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.PieDePagina{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.redes__a{
+    width: 60px;
+    padding: 5px;
+
+}
+
+/*---------------------------------------SOBRE MI----------------------------*/
+.titulo2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 200px;
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+.sobreMi{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+.imagenPerfil{
+    width:500px;
+    height: 700px;
+    margin: 60px;
+    margin-bottom: 20px;
+    
+}
+.textoSobreMi{
+    width: 500px;
+    height:600px;
+    font-size: 20px;
+    margin: 60px;
+    margin-bottom: 20px;  
+}
+
+/*---------------------------------------GALERIA----------------------------*/
+.galeria{
+   display: grid;
+   grid-template-columns:1000px 1000px;
+   grid-template-rows: repeat(4,800px);
+   justify-content: center;
+   grid-gap:10px;
+   grid-template-areas: 
+        "img1 img2"
+        "img3 img2"
+        "img4 img5"
+        "img6 img6"
+    ;
+}
+
+.galeria__1{
+    grid-area: img1;
+}
+.galeria__2{
+    grid-area: img2;
+}
+.galeria__3{
+    grid-area: img3;
+}
+.galeria__4{
+    grid-area: img4;
+}
+.galeria__5{
+    grid-area: img5;
+}
+.galeria__6{
+    grid-area: img6;
+}
+
+
+
+
+.galeria__img{
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------------PROYECTOS-----------------------------*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20x;
+}
+.proyectos__img{
+    padding: 10px;
+    width: 900px;
+}
+
+.proyectos__texto{
+    font-size: 25px;
+    width: 50%;
+
+}
+/*---------------------------------------OBRAS-----------------------------*/
+.grid-obras{
+    display: grid;
+    grid-template-areas: 
+          "H H"
+          "ob1 tx1"
+          "ob2 tx2"
+          "ob3 tx3"
+          "ob4 tx4"
+          "ob5 tx5"
+          "F F";
+   grid-gap: 10px;  
+   grid-template-columns: 600px 1fr;
+
+}
+.ob1{
+    grid-area: ob1;
+}
+.ob2{
+    grid-area: ob2;
+}
+.ob3{
+    grid-area: ob3;
+}
+.ob4{
+    grid-area: ob4;
+}
+.ob5{
+    grid-area: ob5;
+}
+
+.tx1{
+    grid-area: tx1;
+}
+.tx2{
+    grid-area: tx2;
+}
+.tx3{
+    grid-area: tx3;
+}
+.tx4{
+    grid-area: tx4;
+}
+.tx5{
+    grid-area: tx5;
+}
+
+.obras__texto{
+    font-size: 25px;
+}
+
+.obras__img{
+    padding: 10px;
+    width: 100%;
+    
+}
+/*---------------------------------------CONTACTO-----------------------------*/
+.grid-contacto{
+    display: grid;
+    grid-template-areas: 
+          "H H"
+          "img mensaje"
+          "img form"
+          "img form"
+          "F F";
+   grid-gap: 10px;  
+   grid-template-columns: 1fr 1fr;
+
+}
+
+.formulario{
+    grid-area: form;
+    margin: auto;
+}
+.imgcont{
+    grid-area: img;
+}
+
+.DejanosTuMensaje{
+    font-size: 50px;
+    grid-area: mensaje;
+    text-align: center;
+    margin: auto;
+}
+
+.imagen-contacto{
+    width: 100%;
+    padding: 20px;
+}
+
+.formulario__div{
+    width: 800px;
+    margin: 20px;
+   
+}
+
+.formulario__label{
+    width: 800px;
+    height: 900px;
+}
+
+.formulario__input{
+   width: 500px;
+   height: 50px;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ffffff;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #242020;
+    color: #f0e0cb;
+}
+
+.mensaje{
+    height: 150px;
+}
+
+.boton1{
+    background-color:#f18c72 ;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+.boton2{
+    background-color:#f18c72 ;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*---------------------------------------MOBILE-----------------------------*/
+
+@media screen and (max-width: 500px){
+
+    /*---------------------------------------INICIO-----------------------------*/
+    .grid-main{
+        display: grid;
+        grid-template-areas: 
+              "H "
+              "img2 "
+              "c1 "
+              "img3"
+              "img4"
+              "F";
+       grid-gap: 20px;
+       grid-template-columns: 1fr;
+       
+   }
+
+   .inicioTitulo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;  
+    color: #f0e0cb;
+   }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        position: absolute;
+        top:200px;
+        left: 10px;
+    }
+    
+    
+    
+    .H{
+        background-image: url(/imagenes/HOME/fondo.jpg);
+        grid-area: H;
+        width: 100%;
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .subtitulo__texto{
+        color: #f0e0cb;
+        font-size: 40px;
+        text-align: start;
+        width: 200px;
+        height: 100%;
+        
+    }
+    
+    .listaFooter__li{
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+    .PieDePagina{
+        position: absolute;
+        right: 20px;
+        font-size: 15px;
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .redes__a{
+        width: 40px;
+        padding: 5px;
+    
+    }
+    
+    /*---------------------------------------GALERIA-----------------------------*/
+
+    .galeria{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(7,250px) ;
+        grid-template-areas: 
+             "img1 img1"
+             "img2 img2" 
+             "img2 img2"
+             "img3 img3" 
+             "img4 img4" 
+             "img5 img5"
+             "img6 img6" ;
+    }
+    
+    .galeria__img{
+        padding:3px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .titulo2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 80px;
+        position: absolute;
+        left: 100px;
+        top: 700px;
+    }
+
+    /*---------------------------------------SOBRE MI-----------------------------*/
+    .sobreMi{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: center; 
+    }
+
+    .imagenPerfil{
+        width:250px;
+        height: 300px;
+        margin: 20px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        
+    }
+    .textoSobreMi{
+        width: 300px;
+        height:400px;
+        font-size: 15px;
+        margin: 10px;
+        margin-bottom: 10px;  
+        overflow: scroll;
+        
+    }
+    /*---------------------------------------PROYECTOS----------------------------*/
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20x;
+    }
+    .proyectos__img{
+        padding: 10px;
+        width: 450px;
+    }
+    
+    .proyectos__texto{
+        font-size: 20px;
+        width: 75%;
+    
+    }
+    /*---------------------------------------PROYECTOS----------------------------*/
+    .grid-obras{
+        display: grid;
+        grid-template-areas: 
+              "H H"
+              "ob1 ob1"
+              "tx1 tx1"
+              "ob2 ob2"
+              "tx2 tx2"
+              "ob3 ob3"
+              "tx3 tx3"
+              "ob4 ob4"
+              "tx4 tx4"
+              "ob5 ob5"
+              "tx5 tx5 "
+              "F F";
+       grid-gap: 10px;  
+       grid-template-columns: 1fr 1fr;
+    
+    }
+    .ob1{
+        grid-area: ob1;
+    }
+    .ob2{
+        grid-area: ob2;
+    }
+    .ob3{
+        grid-area: ob3;
+    }
+    .ob4{
+        grid-area: ob4;
+    }
+    .ob5{
+        grid-area: ob5;
+    }
+    
+    .tx1{
+        grid-area: tx1;
+    }
+    .tx2{
+        grid-area: tx2;
+    }
+    .tx3{
+        grid-area: tx3;
+    }
+    .tx4{
+        grid-area: tx4;
+    }
+    .tx5{
+        grid-area: tx5;
+    }
+    
+    .obras__texto{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+ /*---------------------------------------PROYECTOS----------------------------*/
+    .grid-contacto{
+        display: grid;
+        grid-template-areas: 
+              "H H"
+              "img img"
+              "mensaje mensaje"
+              "form none"
+              "F F";
+       grid-gap: 10px;  
+       grid-template-columns: 1fr 1fr;
+    
+    }
+    
+    .formulario{
+        grid-area: form;
+        margin: auto;
+    }
+    .imgcont{
+        grid-area: img;
+    }
+    
+    .DejanosTuMensaje{
+        font-size: 50px;
+        grid-area: mensaje;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .imagen-contacto{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .formulario__div{
+        width: 800px;
+        margin: 20px;
+       
+    }
+    
+    .formulario__label{
+        width: 800px;
+        height: 900px;
+    }
+    
+    .formulario__input{
+       width: 500px;
+       height: 50px;
+        padding: 15px;
+        margin: 20px;
+        border: 1px solid #ffffff;
+        font-size: 25px;
+        font-family: 'Oswald', sans-serif;
+        background-color: #242020;
+        color: #f0e0cb;
+    }
+    
+    .mensaje{
+        height: 150px;
+    }
+    
+    .boton1{
+        background-color:#f18c72 ;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .boton2{
+        background-color:#f18c72 ;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+    }
+}
