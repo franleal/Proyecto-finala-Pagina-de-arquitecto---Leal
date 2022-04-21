@@ -14,89 +14,123 @@
          
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
 
         <link rel="stylesheet" href="estilos.css">
         <title>Sergio Leal Arquitecto</title>
     </head>
 
     <body>
-        <div class="grid-main">
+        <div class="container-flow">
             
-            <header class="H">
-                <section class="inicioTitulo">
-                        Sergio Leal 
-                        Arquitecto
-                </section>
+            <header class="H row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="row">
+                        <section class="inicioTitulo col-md-6 col-xs-12">
+                                Sergio Leal 
+                                Arquitecto
+                        </section>
+
+                        <nav class="navbar navbar-expand-lg navbar-light col-md-6 col-xs-12" >
+                            <button class="navbar-toggler bg-white" type="button"        data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                                <span class="navbar-toggler-icon"></span>
+                                
+                            </button>
+                        
+                            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                <ul class=" menu navbar-nav mr-auto ">
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff"  href="sobre mi.html">Sobre mi</a>
+                                    </li>
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff"  href="galeria.html">Galeria</a>
+                                    </li>
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff"  href="proyectos.html">Proyectos</a>
+                                    </li>
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff"  href="obras.html">Obras</a>
+                                    </li>
+                                    <li class="nav-item menu__li">
+                                        <a class="nav-link" style="color:#ffffff"  href="contacto.html">Contacto</a>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                      </nav>
+                    </div>
+                </div>
+
                 
-                <nav>
-                    <ul class="menu animate__animated animate__fadeInRight">
-                        <li class="menu__li"><a href="index.html" >Home</a></li>
-                        <li class="menu__li"><a href="sobre mi.html" >Sobre mi</a></li>
-                        <li class="menu__li"><a href="galeria.html" >Galeria</a></li>
-                        <li class="menu__li"><a href="proyectos.html" >Proyectos</a></li>
-                        <li class="menu__li"><a href="obras.html" >Obras</a></li>
-                        <li class="menu__li"><a href="contacto.html" >Contacto</a></li>
-                    </ul>
-                </nav>  
 
             </header>
 
+            <div class="row">
+                <div class="subtitulo wow animate__animated animate__fadeInLeft col-md-6 col-xs-12">
+                    <div class="subtitulo__texto">
+                        <em>Arquitecto <br> Desarrollista <br> Director  técnico <br> Gerenciador de  proyectos</em>
+                    </div>
+                </div>
 
-            <div class="subtitulo wow animate__animated animate__fadeInLeft">
-                <div class="subtitulo__texto">
-                    <em>Arquitecto <br> Desarrollista <br> Director  técnico <br> Gerenciador de  proyectos</em>
+                <div class="img2 col-md-6 col-xs-12">
+                    <img src="./imagenes/HOME/1.jpg" alt="casa" class="imagenes__img animate__animated animate__fadeIn">
                 </div>
             </div>
 
-            <div class="img2">
-                <img src="./imagenes/HOME/1.jpg" alt="casa" class="imagenes__img animate__animated animate__fadeIn">
+            <div class="row">
+                <div class="img3 col-md-6 col-xs-12">
+                    <img src="./imagenes/HOME/2.jpg" alt="casa2" class="imagenes__img wow animate__animated animate__fadeIn">
+                </div>
+
+                <div class="caja img4 col-md-6 col-xs-12">
+                    <img src="./imagenes/HOME/3.jpg" alt="casa3" class="imagenes__img wow animate__animated animate__fadeIn">
+                </div>
             </div>
+            
+            <footer class="F row">
+                <hr> 
+                <div class="col-md-12 col-xs-12">
+                    <ul class="listaFooter">
+                        <li class="listaFooter__li"><a href="index.html" >Home</a></li> 
 
-            <div class="img3">
-                <img src="./imagenes/HOME/2.jpg" alt="casa2" class="imagenes__img wow animate__animated animate__fadeIn">
-            </div>
+                        <li class="listaFooter__li" > <a href="sobre mi.html" >Sobre mi</a></li>
 
-            <div class="caja img4">
-                <img src="./imagenes/HOME/3.jpg" alt="casa3" class="imagenes__img wow animate__animated animate__fadeIn">
-            </div>
+                        <li class="listaFooter__li"><a href="galeria.html" >Galeria</a></li>
 
-            <footer class="F">
-                <hr>
-                <ul class="listaFooter">
-                    <li class="listaFooter__li"><a href="index.html" >Home</a></li> 
+                        <li class="listaFooter__li"><a href="proyectos.html" >Proyectos</a></li>
 
-                    <li class="listaFooter__li" > <a href="sobre mi.html" >Sobre mi</a></li>
+                        <li class="listaFooter__li"><a href="obras.html" >Obras</a></li>
 
-                    <li class="listaFooter__li"><a href="galeria.html" >Galeria</a></li>
+                        <li class="listaFooter__li"><a href="contacto.html" >Contacto</a></li>
+                    </ul> 
 
-                    <li class="listaFooter__li"><a href="proyectos.html" >Proyectos</a></li>
-
-                    <li class="listaFooter__li"><a href="obras.html" >Obras</a></li>
-
-                    <li class="listaFooter__li"><a href="contacto.html" >Contacto</a></li>
-                </ul> 
-
-                <section class="PieDePagina"> 
-                    Copyright notice ©<br>
-                    Website by Fran
-                </section>  
-                
-                <section class="redes">
-                    <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="ig"></a>
+                    <section class="PieDePagina"> 
+                        Copyright notice ©<br>
+                        Website by Fran
+                    </section>  
                     
-                    <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="tw"></a>
+                    <section class="redes">
+                        <a href="https://www.instagram.com/sergio_m_leal/?hl=es-la"> <img src="./imagenes/redes/ig.jpg" alt="instagram" class="ig"></a>
+                        
+                        <a href="https://mobile.twitter.com/sergioleal1973"> <img src="./imagenes/redes/tw.jpg" alt="twitter" class="tw"></a>
 
-                    <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="fb"></a>
-                </section>
+                        <a href="https://www.facebook.com/sergio.leal.771"><img src="./imagenes/redes/fb.jpg" alt="faceboock" class="fb"></a>
+                    </section>
+                </div>
 
             </footer>
 
-            <script src="js/wow.min.js"></script>
-            <script>
-                new WOW().init();
-            </script>    
-        </div>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>   
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
 </html>

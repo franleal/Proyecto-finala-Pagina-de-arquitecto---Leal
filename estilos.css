@@ -4,43 +4,30 @@
 }
 body{
     font-family: 'Oswald', sans-serif;
-    background-image: linear-gradient(to bottom,#000000,#857e7e);
+    background-color: #242020;
     color: #f0e0cb;
 }
-.grid-main{
-     display: grid;
-     grid-template-areas: 
-           "H H"
-           "c1 img2"
-           "c1 img2"
-           "img3 img4"
-           "F F";
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 700px 500px 500px 500px 500px;
-}
 
- 
+
 /*---------------------------------------INICIO----------------------------*/
 .inicioTitulo{
     font-family: 'Bebas Neue', cursive;
     font-size: 70px;  
-    color: #f0e0cb;;
-    
+    color: #f0e0cb;
+    width: 700px;
 }
-
 .menu{
-    display: flex;
-    flex-direction: row;
     font-size: 30px;
     position: absolute;
-    top:20px;
-    right: 30px;
+    top:2px;
+    right: 5px;
+    width: 700px; 
 }
 
 .menu__li{
     list-style: none;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 0;
 }
 
 a:link, a:visited, a:active {
@@ -53,8 +40,8 @@ a:hover{
 }
 
 .H{
+    
     background-image: url(./imagenes/HOME/fondo.jpg);
-    grid-area: H;
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -62,7 +49,6 @@ a:hover{
 }
 /*---------------------------------------CONTENIDO----------------------------*/
 .subtitulo{
-    grid-area: c1;
     width: 100%;
     height: 100%;
 }
@@ -72,35 +58,32 @@ a:hover{
     font-size: 90px;
     text-align: start;
     width: 700px;
-    height: 100%;
+    height: 500;
 }
+
 
 
 .imagenes__img{
     width:100% ;
     height: 100%;
     object-fit: cover;
+    padding-top: 10px;
+    padding-bottom:10px;
 }
 
 .img2{
-    grid-area: img2;
-    
+    height: 1200px;
 }
-
-imagenes__img
-
 .img3{
-    grid-area: img3;
+    height: 500px;
 }
-
-
 .img4{
-    grid-area: img4;
+    height: 500px;
 }
+
 
 /*---------------------------------------FOOTER----------------------------*/
 .F{
-    grid-area: F;
     width: 100%;
     height: 100%;
     margin-top: 30px;
@@ -119,6 +102,7 @@ imagenes__img
 .PieDePagina{
     position: absolute;
     right: 20px;
+    bottom: 20px;
     font-size: 20px;
 }
 
@@ -262,52 +246,6 @@ imagenes__img
 
 }
 /*---------------------------------------OBRAS-----------------------------*/
-.grid-obras{
-    display: grid;
-    grid-template-areas: 
-          "H H"
-          "ob1 tx1"
-          "ob2 tx2"
-          "ob3 tx3"
-          "ob4 tx4"
-          "ob5 tx5"
-          "F F";
-   grid-gap: 10px;  
-   grid-template-columns: 600px 1fr;
-
-}
-.ob1{
-    grid-area: ob1;
-}
-.ob2{
-    grid-area: ob2;
-}
-.ob3{
-    grid-area: ob3;
-}
-.ob4{
-    grid-area: ob4;
-}
-.ob5{
-    grid-area: ob5;
-}
-
-.tx1{
-    grid-area: tx1;
-}
-.tx2{
-    grid-area: tx2;
-}
-.tx3{
-    grid-area: tx3;
-}
-.tx4{
-    grid-area: tx4;
-}
-.tx5{
-    grid-area: tx5;
-}
-
 .obras__texto{
     font-size: 25px;
     animation: slideInUp;
@@ -319,6 +257,7 @@ imagenes__img
     width: 100%;
     animation: fadeIn;
     animation-duration: 3s;
+    height: 400px;
 }
 /*---------------------------------------CONTACTO-----------------------------*/
 .grid-contacto{
@@ -405,77 +344,74 @@ imagenes__img
 @media screen and (max-width: 500px){
 
     /*---------------------------------------INICIO-----------------------------*/
-    .grid-main{
-        display: grid;
-        grid-template-areas: 
-              "H "
-              "img2 "
-              "c1 "
-              "img3"
-              "img4"
-              "F";
-       grid-gap: 20px;
-       grid-template-columns: 1fr;
-       
-   }
-
-   .inicioTitulo{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 45px;  
-    color: #f0e0cb;
-   }
-
+    
+    .inicioTitulo{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 45px;  
+        color: #f0e0cb;
+        width: 100%;
+    }
+    
     .menu{
-        display: flex;
-        flex-direction: column;
         font-size: 25px;
         position: absolute;
-        top:200px;
+        top:35px;
         left: 10px;
     }
-    
-    
-    
+        
     .H{
         background-image: url(/imagenes/HOME/fondo.jpg);
-        grid-area: H;
         width: 100%;
-        height: 900px;
         background-size: cover;
         background-repeat: no-repeat;
-        
+            
     }
-
+    .imagenes__img{
+        width: 400px;
+        margin-left: 25px;
+    }
+    
+    .img2{
+        height: 600px; ;
+    }
     .subtitulo__texto{
         color: #f0e0cb;
         font-size: 40px;
         text-align: start;
-        width: 200px;
-        height: 100%;
-        
+        width: 100%;
     }
-    
+        
     .listaFooter__li{
         font-size: 20px;
         padding: 5px;
     }
-    
+        
     .PieDePagina{
         position: absolute;
         right: 20px;
         font-size: 15px;
     }
-    
+        
     .redes{
         display: flex;
         flex-direction: row;
         align-items: flex-end;
     }
-    
+        
     .redes__a{
         width: 40px;
         padding: 5px;
-    
+        
+    }
+
+    .titulo2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 75px;
+        position: absolute;
+        left: 55px;
+        top: 500px;
+        animation:fadeIn ;
+        animation-duration: 3s;
     }
     
     /*---------------------------------------GALERIA-----------------------------*/
@@ -500,13 +436,7 @@ imagenes__img
         object-fit: cover;
     }
 
-    .titulo2{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 80px;
-        position: absolute;
-        left: 100px;
-        top: 700px;
-    }
+   
 
     /*---------------------------------------SOBRE MI-----------------------------*/
     .sobreMi{
@@ -532,6 +462,8 @@ imagenes__img
         overflow: scroll;
         
     }
+
+    
     /*---------------------------------------PROYECTOS----------------------------*/
     .proyectos{
         display: flex;
@@ -549,64 +481,18 @@ imagenes__img
         width: 75%;
     
     }
-    /*---------------------------------------PROYECTOS----------------------------*/
-    .grid-obras{
-        display: grid;
-        grid-template-areas: 
-              "H H"
-              "ob1 ob1"
-              "tx1 tx1"
-              "ob2 ob2"
-              "tx2 tx2"
-              "ob3 ob3"
-              "tx3 tx3"
-              "ob4 ob4"
-              "tx4 tx4"
-              "ob5 ob5"
-              "tx5 tx5 "
-              "F F";
-       grid-gap: 10px;  
-       grid-template-columns: 1fr 1fr;
-    
+    /*---------------------------------------OBRAS----------------------------*/
+    .obras__img{
+        width: 100%;
     }
-    .ob1{
-        grid-area: ob1;
-    }
-    .ob2{
-        grid-area: ob2;
-    }
-    .ob3{
-        grid-area: ob3;
-    }
-    .ob4{
-        grid-area: ob4;
-    }
-    .ob5{
-        grid-area: ob5;
-    }
-    
-    .tx1{
-        grid-area: tx1;
-    }
-    .tx2{
-        grid-area: tx2;
-    }
-    .tx3{
-        grid-area: tx3;
-    }
-    .tx4{
-        grid-area: tx4;
-    }
-    .tx5{
-        grid-area: tx5;
-    }
-    
+
     .obras__texto{
         font-size: 15px;
         padding: 5px;
+        width: 100%;
     }
 
- /*---------------------------------------PROYECTOS----------------------------*/
+ /*---------------------------------------CONTACTO----------------------------*/
     .grid-contacto{
         display: grid;
         grid-template-areas: 
