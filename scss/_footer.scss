@@ -1,0 +1,65 @@
+.F{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+    .listaFooter{
+        display: flex;
+        flex-direction: column;
+
+        .listaFooter__li{
+            font-size: 25px;
+            padding: 5px;
+            width: 100px;
+        }
+    }
+
+    .PieDePagina{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 20px;
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        .tw{
+            width: 45px;
+            transition: with 2s;
+            padding: 5px;
+
+        }
+
+        .tw:hover{
+            width: 60px;
+        }
+        .ig{
+            width: 40px;
+            transition: with 2s;
+            padding: 5px;
+        }
+        .ig:hover{
+            width: 60px;
+        }
+        .fb{
+            width: 40px;
+            transition: with 2s;
+            padding: 5px;
+        }
+
+        .fb:hover{
+            width: 60px;
+        }
+    }
+    a:link, a:visited, a:active {
+        text-decoration:none;
+        color:$colorLetras ;  
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+}
