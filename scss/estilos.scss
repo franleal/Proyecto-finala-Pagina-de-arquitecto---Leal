@@ -1,53 +1,35 @@
-$colorFondo:#242020;
-$colorLetras: #f0e0cb;
+/*_______________________________GENERAL_________________________________________*/
 
+$colorFondo:#242020;
+$colorLetras:#f0e0cb;
 
 body {
-    font-family: 'Oswald', sans-serif;
-    $colorFondo:#242020;
-    background-color: $colorFondo;
-    color: $colorLetras;
-}
-
-.H{
-    background-image: url(./fondo.jpg);
-    height: 700px;
-    object-fit: cover;
-
-    .boton_inicio{
-        animation:fadeInRight ;
-        animation-duration: 2.5s;
-    }
-
-    .inicioTitulo{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 70px;  
-        color: $colorLetras;
-        width: 700px;
-    }
-    .menu{
-        font-size: 25px;
-        position: absolute;
-        top:2px;
-        right: 5px;
-        width: 700px; 
-        .menu__li{
-            list-style: none;
-            padding: 10px;
-            padding-top: 0;
-        }
-    }
-    a:link, a:visited, a:active {
-        text-decoration:none;
-        color:$colorLetras ;  
-    }
-    a:hover{
-        text-decoration: underline;
-    }
+    
+    background-color:$colorFondo;
     
 }
 
+$TamanoImagenes:(
+    tamano1:1200px,
+    tamano2:500px,
+    tamano3:500px,
+);
 
+@mixin colorTipoLetras{
+    color: $colorLetras;
+    font-family: 'Oswald', sans-serif;
+}
 
+@import "header";
 @import "main";
 @import "footer";
+@import "sobreMi";
+@import "galeria";
+@import "proyectos";
+@import "obras";
+@import "contacto";
+@import "mobile";
+
+
+
+

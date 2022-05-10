@@ -1,0 +1,16 @@
+/*_______________________________OBRAS_________________________________________*/
+
+.obras__texto{
+    font-size: 25px;
+    animation: slideInUp;
+    animation-duration: 2s;
+    @include colorTipoLetras;
+}
+
+.obras__img{
+    padding: 10px;
+    width: 100%;
+    animation: fadeIn;
+    animation-duration: 3s;
+    height: 400px;
+}

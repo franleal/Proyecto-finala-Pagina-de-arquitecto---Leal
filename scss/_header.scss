@@ -1,0 +1,59 @@
+
+/*_______________________________HEADER_________________________________________*/
+.H{
+    background-image: url(./fondo.jpg);
+    height: 700px;
+    object-fit: cover;
+
+    .boton_inicio{
+        animation:fadeInRight ;
+        animation-duration: 2.5s;
+        
+    }
+
+    .inicioTitulo{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 70px;  
+        color: $colorLetras;
+        width: 700px;
+    }
+
+    a{
+        font-family: 'Bebas Neue', cursive;
+        color:$colorLetras;
+        text-decoration: none;
+    }
+    
+    .menu{
+        font-size: 25px;
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        .menu__li{
+            list-style: none;
+            padding: 10px;
+            padding-top: 0;
+            font-size: 30px;
+        }
+    }
+    .nav-link:link, .nav-link:visited, .nav-link:active {
+        text-decoration:none;  
+        @include colorTipoLetras;
+    }
+   
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+    
+    .titulo2{
+        font-family: 'Bebas Neue', cursive;
+        color:$colorLetras;
+        font-size: 150px;
+        position: absolute;
+        left: 100px;
+        top: 500px;
+        animation:fadeIn ;
+        animation-duration: 3s;
+        
+    }
+}

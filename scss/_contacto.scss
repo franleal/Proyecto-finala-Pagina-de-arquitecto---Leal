@@ -1,0 +1,76 @@
+/*_______________________________CONTACTO_________________________________________*/
+
+.grid-contacto{
+    display: grid;
+    grid-template-areas: 
+          "H H"
+          "img mensaje"
+          "img form"
+          "img form"
+          "F F";
+   grid-gap: 10px;  
+   grid-template-columns: 1fr 1fr;
+
+}
+.imgcont{
+    grid-area: img;
+}
+.imagen-contacto{
+    width: 100%;
+    padding: 20px;
+}
+.DejanosTuMensaje{
+    font-size: 50px;
+    grid-area: mensaje;
+    text-align: center;
+    margin: auto;
+}
+.formulario{
+    grid-area: form;
+    margin: auto;
+
+    .formulario__div{
+        width: 800px;
+        margin: 20px;
+    }
+
+    .formulario__label{
+        width: 800px;
+        height: 900px;
+    }
+
+    .formulario__input{
+        width: 500px;
+        height: 50px;
+         padding: 15px;
+         margin: 20px;
+         border: 1px solid #ffffff;
+         font-size: 25px;
+         font-family: 'Oswald', sans-serif;
+         background-color: #242020;
+         color: #f0e0cb;
+         animation: fadeInRight;
+         animation-duration: 1s;
+    }
+
+    .mensaje{
+        height: 150px;
+    }
+    
+    .boton1{
+        background-color:#f18c72 ;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+       
+    }
+    .boton2{
+        background-color:#f18c72 ;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+}

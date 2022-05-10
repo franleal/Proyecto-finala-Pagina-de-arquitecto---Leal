@@ -1,0 +1,278 @@
+/*______________________________MOBILE_________________________________________*/
+
+@media screen and (max-width: 500px){
+    /*__________________header mobile________________________________________________*/
+    
+    .H{
+        background-image: url(/imagenes/HOME/fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    
+
+        .menu{
+            font-size: 25px;
+            position:initial;
+        }
+        .inicioTitulo{
+            font-size:40px;  
+            width: 350px;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            text-align: right;
+            
+           
+        }  
+ 
+        .boton_inicio{
+            width: 100px;
+            position: absolute;
+            left: 2px;
+            top: 5px;
+            
+        }
+
+        .titulo2{
+            font-family: 'Bebas Neue', cursive;
+            font-size: 75px;
+            position: absolute;
+            left: 55px;
+            top: 500px;
+            animation:fadeIn ;
+            animation-duration: 3s;
+        }
+       
+    }
+    /*__________________main mobile________________________________________________*/
+    .imagenes__img{
+        width: 400px;
+        margin-left: 40px;
+        
+    }
+    .img4 {
+        height: 500px;
+    }
+    .img2{
+        height: 600px;  
+    }
+    .img3{
+        height: 500px;
+    }
+    .subtitulo{
+
+        .subtitulo__texto{
+            font-size: 45px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+   
+    /*__________________footer mobile________________________________________________*/
+    
+    .F{
+        .listaFooter{
+            display:flex;
+            flex-direction: column;
+            list-style: none;
+
+            .listaFooter__li{
+                font-size: 20px;
+                padding: 5px;
+                width: 100%;
+            }
+        }
+        
+
+        .PieDePagina{
+            position: absolute;
+            right: 30px;
+            font-size: 20px;
+        }
+    
+
+        .redes{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        .ig{
+            width: 40px;
+            padding: 5px;
+            
+        }
+        .tw{
+            width: 40px;
+            padding: 5px;
+        }
+        .fb{
+            width: 40px;
+            padding: 5px;
+        }
+    }
+    /*__________________sobre mi mobile______________________________________________*/
+
+    .sobreMi{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: center; 
+
+        .imagenPerfil{
+            width:250px;
+            height: 300px;
+            margin: 20px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            
+        }
+
+        .textoSobreMi{
+            width: 300px;
+            height:400px;
+            font-size: 15px;
+            margin: 10px;
+            margin-bottom: 10px;  
+            overflow: scroll;
+        }
+    }
+
+    /*__________________Galeria Mobile______________________________________________*/
+
+    .galeria{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(7,250px) ;
+        grid-template-areas: 
+             "img1 img1"
+             "img2 img2" 
+             "img2 img2"
+             "img3 img3" 
+             "img4 img4" 
+             "img5 img5"
+             "img6 img6" ;
+    }
+    
+    .galeria__img{
+        padding:5px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /*__________________Proyectos Mobile_____________________________________________*/
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20x;
+
+        .proyectos__img{
+            padding: 10px;
+            width: 450px;
+        }
+
+        .proyectos__texto{
+            font-size: 20px;
+            width: 75%;
+        
+        }
+    }
+    
+    /*__________________Obras Mobile_________________________________________________*/
+
+    .obras__img{
+        width:450px;
+    }
+
+    .obras__texto{
+        font-size: 20px;
+        padding-top:  5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /*______________Contacto Mobile_________________________________________________*/ 
+
+    .grid-contacto{
+        display: grid;
+        grid-template-areas: 
+              "H H"
+              "img img"
+              "mensaje mensaje"
+              "form none"
+              "F F";
+       grid-gap: 10px;  
+       grid-template-columns: 1fr 1fr;
+
+       .formulario{
+        grid-area: form;
+        margin: auto;
+        
+            .formulario__div{
+                width: 400px;
+                margin: 20px;
+            
+            }
+
+            .formulario__label{
+                width:400px;
+                height: 700px;
+            }
+
+            .formulario__input{
+                width: 400px;
+                height: 50px;
+                padding: 15px;
+                margin: 20px;
+                border: 1px solid #ffffff;
+                font-size: 25px;
+                font-family: 'Oswald', sans-serif;
+                background-color: #242020;
+                color: #f0e0cb;
+            }
+
+            .mensaje{
+                height: 150px;
+                
+            }
+
+            .boton1{
+                background-color:#f18c72 ;
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                margin: 10px;
+            }
+            .boton2{
+                background-color:#f18c72 ;
+                width: 150px;
+                height: 50px;
+                padding: 10px;
+                margin: 10px;
+            }
+    
+        }
+
+
+        .imgcont{
+            grid-area: img;
+        }
+
+        .imagen-contacto{
+            width: 500px;;
+            padding-top: 10px;
+        }
+
+        .DejanosTuMensaje{
+            font-size: 50px;
+            grid-area: mensaje;
+            text-align: center;
+            margin: auto;
+            @include colorTipoLetras;
+        }
+    
+    }
+
+}  

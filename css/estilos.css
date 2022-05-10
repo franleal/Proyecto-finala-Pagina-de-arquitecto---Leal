@@ -1,183 +1,246 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+/*_______________________________GENERAL_________________________________________*/
+body {
+  background-color: #242020; }
 
-
-
-/*---------------------------------------SOBRE MI----------------------------*/
-.titulo2{
+/*_______________________________HEADER_________________________________________*/
+.H {
+  background-image: url(./fondo.jpg);
+  height: 700px;
+  object-fit: cover; }
+  .H .boton_inicio {
+    animation: fadeInRight;
+    animation-duration: 2.5s; }
+  .H .inicioTitulo {
     font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    color: #f0e0cb;
+    width: 700px; }
+  .H a {
+    font-family: 'Bebas Neue', cursive;
+    color: #f0e0cb;
+    text-decoration: none; }
+  .H .menu {
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    top: 10px; }
+    .H .menu .menu__li {
+      list-style: none;
+      padding: 10px;
+      padding-top: 0;
+      font-size: 30px; }
+  .H .nav-link:link, .H .nav-link:visited, .H .nav-link:active {
+    text-decoration: none;
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
+  .H .nav-link:hover {
+    text-decoration: underline; }
+  .H .titulo2 {
+    font-family: 'Bebas Neue', cursive;
+    color: #f0e0cb;
     font-size: 150px;
     position: absolute;
     left: 100px;
     top: 500px;
-    animation:fadeIn ;
-    animation-duration: 3s;
-}
-.sobreMi{
-    display:flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    
-}
-.imagenPerfil{
-    width:500px;
+    animation: fadeIn;
+    animation-duration: 3s; }
+
+/*_______________________________MAIN_________________________________________*/
+.subtitulo {
+  width: 100%;
+  height: 100%; }
+  .subtitulo .subtitulo__texto {
+    font-size: 90px;
+    text-align: start;
+    width: 700px;
+    height: 500; }
+  .subtitulo .subtitulo__texto {
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
+
+.imagenes__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.img2 {
+  height: 1200px; }
+
+.img3 {
+  height: 500px; }
+
+.img4 {
+  height: 500px; }
+
+/*_______________________________FOOTER_________________________________________*/
+.F {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px; }
+  .F .listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+    .F .listaFooter .listaFooter__li {
+      font-size: 20px;
+      padding: 5px;
+      width: 100px; }
+  .F .PieDePagina {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
+  .F .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+    .F .redes .tw:hover {
+      width: 60px; }
+    .F .redes .ig:hover {
+      width: 60px; }
+    .F .redes .fb:hover {
+      width: 60px; }
+  .F a:link, .F a:visited, .F a:active {
+    text-decoration: none;
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
+  .F a:hover {
+    text-decoration: underline; }
+
+.redes_individual, .tw, .fb, .ig {
+  width: 40px;
+  padding: 5px;
+  transition: with 2s; }
+
+/*_______________________________SOBRE MI_________________________________________*/
+.sobreMi {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+  .sobreMi .imagenPerfil {
+    width: 500px;
     height: 700px;
     margin: 60px;
-    margin-bottom: 20px;
-    
-}
-.textoSobreMi{
+    margin-bottom: 20px; }
+  .sobreMi .textoSobreMi {
     width: 500px;
-    height:600px;
+    height: 600px;
     font-size: 20px;
     margin: 60px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
     animation-duration: 6s;
     animation-name: sobreMiTexto;
     animation-iteration-count: inherit;
-}
-@keyframes sobreMiTexto{
-    0%{
-        opacity: 0;
-    }
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
 
-    100%{
-        opacity: 1;
-    }
-}
+@keyframes sobreMiTexto {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
+/*_______________________________GALERIA_________________________________________*/
+.galeria {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  grid-template-rows: repeat(4, 400px);
+  justify-content: center;
+  grid-template-areas: "img1 img2" "img3 img2" "img4 img5" "img6 img6"; }
+  .galeria .galeria__1 {
+    grid-area: img1; }
+  .galeria .galeria__2 {
+    grid-area: img2; }
+  .galeria .galeria__3 {
+    grid-area: img3; }
+  .galeria .galeria__4 {
+    grid-area: img4; }
+  .galeria .galeria__5 {
+    grid-area: img5; }
+  .galeria .galeria__6 {
+    grid-area: img6; }
 
-/*---------------------------------------GALERIA----------------------------*/
-.galeria{
-   display: grid;
-   grid-template-columns:560px 560px;
-   grid-template-rows: repeat(4,400px);
-   justify-content: center;
-   grid-template-areas: 
-        "img1 img2"
-        "img3 img2"
-        "img4 img5"
-        "img6 img6"
-    ;
-}
+.galeria__img {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInUp;
+  animation-duration: 2s;
+  position: relative;
+  transition: all 300ms; }
 
-.galeria__1{
-    grid-area: img1;
-}
-.galeria__2{
-    grid-area: img2;
-}
-.galeria__3{
-    grid-area: img3;
-}
-.galeria__4{
-    grid-area: img4;
-}
-.galeria__5{
-    grid-area: img5;
-}
-.galeria__6{
-    grid-area: img6;
-}
+.galeria__img:hover {
+  transform: scale(1.15); }
 
-
-.galeria__img{
-    padding:10px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    animation: fadeInUp;
-    animation-duration: 2s;
-    transition: all 300ms;
-}
-
-.galeria__img:hover{
-    transform: scale(1.15);
-}
-
-/*---------------------------------------PROYECTOS-----------------------------*/
-.proyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20x;
-}
-.proyectos__img{
+/*_______________________________PROYECTOS EN CURSO_________________________________*/
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20x; }
+  .proyectos .proyectos__img {
     padding: 10px;
     width: 900px;
     animation: zoomIn;
-    animation-duration: 2s;
-}
-
-.proyectos__texto{
+    animation-duration: 2s; }
+  .proyectos .proyectos__texto {
     font-size: 25px;
     width: 50%;
+    color: #f0e0cb;
+    font-family: 'Oswald', sans-serif; }
 
-}
-/*---------------------------------------OBRAS-----------------------------*/
-.obras__texto{
-    font-size: 25px;
-    animation: slideInUp;
-    animation-duration: 2s;
-}
+/*_______________________________OBRAS_________________________________________*/
+.obras__texto {
+  font-size: 25px;
+  animation: slideInUp;
+  animation-duration: 2s;
+  color: #f0e0cb;
+  font-family: 'Oswald', sans-serif; }
 
-.obras__img{
-    padding: 10px;
-    width: 100%;
-    animation: fadeIn;
-    animation-duration: 3s;
-    height: 400px;
-}
-/*---------------------------------------CONTACTO-----------------------------*/
-.grid-contacto{
-    display: grid;
-    grid-template-areas: 
-          "H H"
-          "img mensaje"
-          "img form"
-          "img form"
-          "F F";
-   grid-gap: 10px;  
-   grid-template-columns: 1fr 1fr;
+.obras__img {
+  padding: 10px;
+  width: 100%;
+  animation: fadeIn;
+  animation-duration: 3s;
+  height: 400px; }
 
-}
+/*_______________________________CONTACTO_________________________________________*/
+.grid-contacto {
+  display: grid;
+  grid-template-areas: "H H" "img mensaje" "img form" "img form" "F F";
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr; }
 
-.formulario{
-    grid-area: form;
-    margin: auto;
-}
-.imgcont{
-    grid-area: img;
-}
+.imgcont {
+  grid-area: img; }
 
-.DejanosTuMensaje{
-    font-size: 50px;
-    grid-area: mensaje;
-    text-align: center;
-    margin: auto;
-}
+.imagen-contacto {
+  width: 100%;
+  padding: 20px; }
 
-.imagen-contacto{
-    width: 100%;
-    padding: 20px;
-}
+.DejanosTuMensaje {
+  font-size: 50px;
+  grid-area: mensaje;
+  text-align: center;
+  margin: auto; }
 
-.formulario__div{
+.formulario {
+  grid-area: form;
+  margin: auto; }
+  .formulario .formulario__div {
     width: 800px;
-    margin: 20px;
-   
-}
-
-.formulario__label{
+    margin: 20px; }
+  .formulario .formulario__label {
     width: 800px;
-    height: 900px;
-}
-
-.formulario__input{
-   width: 500px;
-   height: 50px;
+    height: 900px; }
+  .formulario .formulario__input {
+    width: 500px;
+    height: 50px;
     padding: 15px;
     margin: 20px;
     border: 1px solid #ffffff;
@@ -186,264 +249,189 @@
     background-color: #242020;
     color: #f0e0cb;
     animation: fadeInRight;
-    animation-duration: 1s;
-}
-
-.mensaje{
-    height: 150px;
-}
-
-.boton1{
-    background-color:#f18c72 ;
+    animation-duration: 1s; }
+  .formulario .mensaje {
+    height: 150px; }
+  .formulario .boton1 {
+    background-color: #f18c72;
     width: 150px;
     height: 50px;
     padding: 10px;
-    margin: 10px;
-   
-}
-.boton2{
-    background-color:#f18c72 ;
+    margin: 10px; }
+  .formulario .boton2 {
+    background-color: #f18c72;
     width: 150px;
     height: 50px;
     padding: 10px;
-    margin: 10px;
-    
-}
+    margin: 10px; }
 
-/*---------------------------------------MOBILE-----------------------------*/
-
-@media screen and (max-width: 500px){
-
-    /*---------------------------------------INICIO-----------------------------*/
-    
-    .inicioTitulo{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 35px;  
-        color: #f0e0cb;
-        width: 100%;
-        text-align: right;
-        padding-right: 30px;
-    }
-    
-    .boton_inicio{
-        position: absolute;
-        top: 2px;
-        left: 5px;
-    }
-
-    .menu{
-        font-size: 25px;
-        position: absolute;
-        top:35px;
-        left: 10px;
-    }
-        
-    .H{
-        background-image: url(/imagenes/HOME/fondo.jpg);
-        object-fit:cover;
-        height:700px;   
-    }
-    .imagenes__img{
+/*______________________________MOBILE_________________________________________*/
+@media screen and (max-width: 500px) {
+  /*__________________header mobile________________________________________________*/
+  .H {
+    background-image: url(/imagenes/HOME/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; }
+    .H .menu {
+      font-size: 25px;
+      position: initial; }
+    .H .inicioTitulo {
+      font-size: 40px;
+      width: 350px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      text-align: right; }
+    .H .boton_inicio {
+      width: 100px;
+      position: absolute;
+      left: 2px;
+      top: 5px; }
+    .H .titulo2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 75px;
+      position: absolute;
+      left: 55px;
+      top: 500px;
+      animation: fadeIn;
+      animation-duration: 3s; }
+  /*__________________main mobile________________________________________________*/
+  .imagenes__img {
+    width: 400px;
+    margin-left: 40px; }
+  .img4 {
+    height: 500px; }
+  .img2 {
+    height: 600px; }
+  .img3 {
+    height: 500px; }
+  .subtitulo .subtitulo__texto {
+    font-size: 45px;
+    width: 100%;
+    text-align: center; }
+  /*__________________footer mobile________________________________________________*/
+  .F .listaFooter {
+    display: flex;
+    flex-direction: column;
+    list-style: none; }
+    .F .listaFooter .listaFooter__li {
+      font-size: 20px;
+      padding: 5px;
+      width: 100%; }
+  .F .PieDePagina {
+    position: absolute;
+    right: 30px;
+    font-size: 20px; }
+  .F .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; }
+  .F .ig {
+    width: 40px;
+    padding: 5px; }
+  .F .tw {
+    width: 40px;
+    padding: 5px; }
+  .F .fb {
+    width: 40px;
+    padding: 5px; }
+  /*__________________sobre mi mobile______________________________________________*/
+  .sobreMi {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; }
+    .sobreMi .imagenPerfil {
+      width: 250px;
+      height: 300px;
+      margin: 20px;
+      margin-bottom: 10px;
+      margin-top: 50px; }
+    .sobreMi .textoSobreMi {
+      width: 300px;
+      height: 400px;
+      font-size: 15px;
+      margin: 10px;
+      margin-bottom: 10px;
+      overflow: scroll; }
+  /*__________________Galeria Mobile______________________________________________*/
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 250px);
+    grid-template-areas: "img1 img1" "img2 img2"  "img2 img2" "img3 img3"  "img4 img4"  "img5 img5" "img6 img6"; }
+  .galeria__img {
+    padding: 5px;
+    width: 100%;
+    object-fit: cover; }
+  /*__________________Proyectos Mobile_____________________________________________*/
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20x; }
+    .proyectos .proyectos__img {
+      padding: 10px;
+      width: 450px; }
+    .proyectos .proyectos__texto {
+      font-size: 20px;
+      width: 75%; }
+  /*__________________Obras Mobile_________________________________________________*/
+  .obras__img {
+    width: 450px; }
+  .obras__texto {
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%; }
+  /*______________Contacto Mobile_________________________________________________*/
+  .grid-contacto {
+    display: grid;
+    grid-template-areas: "H H" "img img" "mensaje mensaje" "form none" "F F";
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; }
+    .grid-contacto .formulario {
+      grid-area: form;
+      margin: auto; }
+      .grid-contacto .formulario .formulario__div {
         width: 400px;
-        margin-left: 40px;
-        
-    }
-    
-    .img2{
-        height: 600px; ;
-    }
-    .subtitulo__texto{
-        color: #f0e0cb;
-        font-size: 40px;
-        text-align: start;
-        width: 100%;
-    }
-        
-    .listaFooter__li{
-        font-size: 20px;
-        padding: 5px;
-    }
-        
-    .PieDePagina{
-        position: absolute;
-        right: 20px;
-        font-size: 15px;
-    }
-        
-    .redes{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-        
-    .redes__a{
-        width: 40px;
-        padding: 5px;
-        
-    }
-
-    .titulo2{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 75px;
-        position: absolute;
-        left: 55px;
-        top: 500px;
-        animation:fadeIn ;
-        animation-duration: 3s;
-    }
-    
-    /*---------------------------------------GALERIA-----------------------------*/
-
-    .galeria{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: repeat(7,250px) ;
-        grid-template-areas: 
-             "img1 img1"
-             "img2 img2" 
-             "img2 img2"
-             "img3 img3" 
-             "img4 img4" 
-             "img5 img5"
-             "img6 img6" ;
-    }
-    
-    .galeria__img{
-        padding-top:10px;
-        width: 100%;
-        object-fit: cover;
-        margin-left: 7px;
-    }
-
-   
-
-    /*---------------------------------------SOBRE MI-----------------------------*/
-    .sobreMi{
-        display:flex;
-        flex-direction: row-reverse;
-        justify-content: center; 
-    }
-
-    .imagenPerfil{
-        width:250px;
-        height: 300px;
-        margin: 20px;
-        margin-bottom: 10px;
-        margin-top: 50px;
-        
-    }
-    .textoSobreMi{
-        width: 300px;
-        height:400px;
-        font-size: 15px;
-        margin: 10px;
-        margin-bottom: 10px;  
-        overflow: scroll;
-        
-    }
-
-    
-    /*---------------------------------------PROYECTOS----------------------------*/
-    .proyectos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20x;
-    }
-    .proyectos__img{
-        padding: 10px;
-        width: 450px;
-    }
-    
-    .proyectos__texto{
-        font-size: 20px;
-        width: 75%;
-    
-    }
-    /*---------------------------------------OBRAS----------------------------*/
-    .obras__img{
-        width: 100%;
-    }
-
-    .obras__texto{
-        font-size: 15px;
-        padding: 5px;
-        width: 100%;
-    }
-
- /*---------------------------------------CONTACTO----------------------------*/
-    .grid-contacto{
-        display: grid;
-        grid-template-areas: 
-              "H H"
-              "img img"
-              "mensaje mensaje"
-              "form none"
-              "F F";
-       grid-gap: 10px;  
-       grid-template-columns: 1fr 1fr;
-    
-    }
-    
-    .formulario{
-        grid-area: form;
-        margin: auto;
-    }
-    .imgcont{
-        grid-area: img;
-    }
-    
-    .DejanosTuMensaje{
-        font-size: 50px;
-        grid-area: mensaje;
-        text-align: center;
-        margin: auto;
-    }
-    
-    .imagen-contacto{
-        width: 100%;
-        padding: 20px;
-    }
-    
-    .formulario__div{
-        width: 800px;
-        margin: 20px;
-       
-    }
-    
-    .formulario__label{
-        width: 800px;
-        height: 900px;
-    }
-    
-    .formulario__input{
-       width: 500px;
-       height: 50px;
+        margin: 20px; }
+      .grid-contacto .formulario .formulario__label {
+        width: 400px;
+        height: 700px; }
+      .grid-contacto .formulario .formulario__input {
+        width: 400px;
+        height: 50px;
         padding: 15px;
         margin: 20px;
         border: 1px solid #ffffff;
         font-size: 25px;
         font-family: 'Oswald', sans-serif;
         background-color: #242020;
-        color: #f0e0cb;
-    }
-    
-    .mensaje{
-        height: 150px;
-    }
-    
-    .boton1{
-        background-color:#f18c72 ;
+        color: #f0e0cb; }
+      .grid-contacto .formulario .mensaje {
+        height: 150px; }
+      .grid-contacto .formulario .boton1 {
+        background-color: #f18c72;
         width: 150px;
         height: 50px;
         padding: 10px;
-        margin: 10px;
-    }
-    .boton2{
-        background-color:#f18c72 ;
+        margin: 10px; }
+      .grid-contacto .formulario .boton2 {
+        background-color: #f18c72;
         width: 150px;
         height: 50px;
         padding: 10px;
-        margin: 10px;
-    }
-}
+        margin: 10px; }
+    .grid-contacto .imgcont {
+      grid-area: img; }
+    .grid-contacto .imagen-contacto {
+      width: 500px;
+      padding-top: 10px; }
+    .grid-contacto .DejanosTuMensaje {
+      font-size: 50px;
+      grid-area: mensaje;
+      text-align: center;
+      margin: auto;
+      color: #f0e0cb;
+      font-family: 'Oswald', sans-serif; } }

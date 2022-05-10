@@ -1,0 +1,22 @@
+/*_______________________________PROYECTOS EN CURSO_________________________________*/
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20x;
+
+    .proyectos__img{
+        padding: 10px;
+        width: 900px;
+        animation: zoomIn;
+        animation-duration: 2s;
+    }
+
+    .proyectos__texto{
+        font-size: 25px;
+        width: 50%;
+        @include colorTipoLetras;
+
+    }
+}
